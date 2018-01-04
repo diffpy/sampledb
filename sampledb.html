@@ -1,107 +1,368 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>sampledb package &#8212; sampledb  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to sampledb’s documentation!" href="index.html" />
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sampledb package &mdash; sampledb  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="sampledb  documentation" href="index.html"/>
+        <link rel="prev" title="Welcome to sampledb’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head>
-  <body>
-  
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+          
+            <a href="index.html" class="icon icon-home"> sampledb
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">sampledb package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sampledb.databasesearcher">sampledb.databasesearcher module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sampledb.datapublisher">sampledb.datapublisher module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sampledb.sampledatabase">sampledb.sampledatabase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sampledb.searchresult">sampledb.searchresult module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sampledb">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sampledb</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>sampledb package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/sampledb.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="sampledb-package">
 <h1>sampledb package<a class="headerlink" href="#sampledb-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="sampledb-databasesearcher-module">
-<h2>sampledb.databasesearcher module<a class="headerlink" href="#sampledb-databasesearcher-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-sampledb.databasesearcher">
+<span id="sampledb-databasesearcher-module"></span><h2>sampledb.databasesearcher module<a class="headerlink" href="#module-sampledb.databasesearcher" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sampledb.databasesearcher.DatabaseSearcher">
+<em class="property">class </em><code class="descclassname">sampledb.databasesearcher.</code><code class="descname">DatabaseSearcher</code><span class="sig-paren">(</span><em>collection</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/databasesearcher.html#DatabaseSearcher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.databasesearcher.DatabaseSearcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Seach a database.</p>
+<dl class="classmethod">
+<dt id="sampledb.databasesearcher.DatabaseSearcher.date_range">
+<em class="property">classmethod </em><code class="descname">date_range</code><span class="sig-paren">(</span><em>startdate=None</em>, <em>enddate=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/databasesearcher.html#DatabaseSearcher.date_range"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.databasesearcher.DatabaseSearcher.date_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="sampledb.databasesearcher.DatabaseSearcher.parse_date">
+<em class="property">classmethod </em><code class="descname">parse_date</code><span class="sig-paren">(</span><em>date</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/databasesearcher.html#DatabaseSearcher.parse_date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.databasesearcher.DatabaseSearcher.parse_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a string in ‘YYYY-MM-DD’ format to a datetime object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sampledb.databasesearcher.DatabaseSearcher.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/databasesearcher.html#DatabaseSearcher.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.databasesearcher.DatabaseSearcher.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search the database for entries with the specified key, value pairs.
+Returns a cursor with the results.</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="sampledb-datapublisher-module">
-<h2>sampledb.datapublisher module<a class="headerlink" href="#sampledb-datapublisher-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-sampledb.datapublisher">
+<span id="sampledb-datapublisher-module"></span><h2>sampledb.datapublisher module<a class="headerlink" href="#module-sampledb.datapublisher" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sampledb.datapublisher.DataPublisher">
+<em class="property">class </em><code class="descclassname">sampledb.datapublisher.</code><code class="descname">DataPublisher</code><span class="sig-paren">(</span><em>collection</em>, <em>schema={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/datapublisher.html#DataPublisher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.datapublisher.DataPublisher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Publish data to a database.</p>
+<dl class="classmethod">
+<dt id="sampledb.datapublisher.DataPublisher.get_SAF">
+<em class="property">classmethod </em><code class="descname">get_SAF</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/datapublisher.html#DataPublisher.get_SAF"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.datapublisher.DataPublisher.get_SAF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="sampledb.datapublisher.DataPublisher.get_schema">
+<code class="descname">get_schema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/datapublisher.html#DataPublisher.get_schema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.datapublisher.DataPublisher.get_schema" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="sampledb.datapublisher.DataPublisher.parse_sheet">
+<em class="property">classmethod </em><code class="descname">parse_sheet</code><span class="sig-paren">(</span><em>sheet</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/datapublisher.html#DataPublisher.parse_sheet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.datapublisher.DataPublisher.parse_sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts each row in a sheet to a dictionary.
+Returns a list of the dictionaries.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="sampledb.datapublisher.DataPublisher.parse_wb">
+<em class="property">classmethod </em><code class="descname">parse_wb</code><span class="sig-paren">(</span><em>wb</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/datapublisher.html#DataPublisher.parse_wb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.datapublisher.DataPublisher.parse_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts each row in all sheets of a workbook to a dictionary.
+Returns a list of the dictionaries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sampledb.datapublisher.DataPublisher.publish">
+<code class="descname">publish</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/datapublisher.html#DataPublisher.publish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.datapublisher.DataPublisher.publish" title="Permalink to this definition">¶</a></dt>
+<dd><p>Publish a spreadsheet to the database.</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="sampledb-sampledatabase-module">
-<h2>sampledb.sampledatabase module<a class="headerlink" href="#sampledb-sampledatabase-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-sampledb.sampledatabase">
+<span id="sampledb-sampledatabase-module"></span><h2>sampledb.sampledatabase module<a class="headerlink" href="#module-sampledb.sampledatabase" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sampledb.sampledatabase.SampleDatabase">
+<em class="property">class </em><code class="descclassname">sampledb.sampledatabase.</code><code class="descname">SampleDatabase</code><span class="sig-paren">(</span><em>hostname=None</em>, <em>db='sampleDB'</em>, <em>collection='samples'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="sampledb.sampledatabase.SampleDatabase.get_schema">
+<code class="descname">get_schema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.get_schema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.get_schema" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="sampledb.sampledatabase.SampleDatabase.load_schema">
+<code class="descname">load_schema</code><span class="sig-paren">(</span><em>schema_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.load_schema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.load_schema" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="sampledb.sampledatabase.SampleDatabase.publish">
+<code class="descname">publish</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.publish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.publish" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="sampledb.sampledatabase.SampleDatabase.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="sampledb-searchresult-module">
-<h2>sampledb.searchresult module<a class="headerlink" href="#sampledb-searchresult-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-sampledb.searchresult">
+<span id="sampledb-searchresult-module"></span><h2>sampledb.searchresult module<a class="headerlink" href="#module-sampledb.searchresult" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sampledb.searchresult.SearchResult">
+<em class="property">class </em><code class="descclassname">sampledb.searchresult.</code><code class="descname">SearchResult</code><span class="sig-paren">(</span><em>results</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/searchresult.html#SearchResult"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.searchresult.SearchResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>An object containing the matching results of a search on the database.</p>
+<dl class="method">
+<dt id="sampledb.searchresult.SearchResult.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/searchresult.html#SearchResult.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.searchresult.SearchResult.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of samples that match the search.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sampledb.searchresult.SearchResult.download">
+<code class="descname">download</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/searchresult.html#SearchResult.download"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.searchresult.SearchResult.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download the search results as a spreadsheet.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sampledb.searchresult.SearchResult.filter">
+<code class="descname">filter</code><span class="sig-paren">(</span><em>indices</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/searchresult.html#SearchResult.filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.searchresult.SearchResult.filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the search results.
+Returns new SearchResult with only the filtered results.</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-sampledb">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-sampledb" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
 
+           </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to sampledb’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to sampledb’s documentation!</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2017, Author.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="_sources/sampledb.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
-    
-  </body>
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
 </html>
