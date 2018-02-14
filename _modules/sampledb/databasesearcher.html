@@ -174,8 +174,8 @@
 <span class="sd">        Convert a string in &#39;YYYY-MM-DD&#39; format to a datetime object.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">date</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
-        <span class="n">date</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">date</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">datetime</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">date</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">date</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span></div>
+        <span class="n">date</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">date</span><span class="p">]</span></div>
+        <span class="k">return</span> <span class="n">datetime</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">date</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">date</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 
 <div class="viewcode-block" id="DatabaseSearcher.date_range"><a class="viewcode-back" href="../../sampledb.html#sampledb.databasesearcher.DatabaseSearcher.date_range">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">date_range</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">startdate</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">enddate</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -189,8 +189,8 @@
 
         <span class="k">if</span> <span class="n">range_</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">range_</span><span class="p">}</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="p">{}</span></div>
+        <span class="k">else</span><span class="p">:</span></div>
+            <span class="k">return</span> <span class="p">{}</span>
 
 <div class="viewcode-block" id="DatabaseSearcher.search"><a class="viewcode-back" href="../../sampledb.html#sampledb.databasesearcher.DatabaseSearcher.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -202,8 +202,8 @@
             <span class="n">query</span><span class="p">[</span><span class="s1">&#39;uid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;$in&#39;</span><span class="p">:</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;uid&#39;</span><span class="p">]}</span>
         <span class="n">dr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">query</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;startdate&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
                              <span class="n">query</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;enddate&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
-        <span class="n">query</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dr</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">SearchResult</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">})))</span></div></div>
+        <span class="n">query</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dr</span><span class="p">)</span></div></div>
+        <span class="k">return</span> <span class="n">SearchResult</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;_id&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">})))</span>
 </pre></div>
 
            </div>

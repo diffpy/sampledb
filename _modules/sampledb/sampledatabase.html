@@ -169,17 +169,17 @@
 
 <div class="viewcode-block" id="SampleDatabase.load_schema"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.load_schema">[docs]</a>    <span class="k">def</span> <span class="nf">load_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">schema_file</span><span class="p">):</span>
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">schema_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">sch</span><span class="p">:</span>
-            <span class="n">schema</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">sch</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">schema</span> <span class="o">=</span> <span class="n">schema</span></div>
+            <span class="n">schema</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">sch</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">schema</span> <span class="o">=</span> <span class="n">schema</span>
 
-<div class="viewcode-block" id="SampleDatabase.get_schema"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.get_schema">[docs]</a>    <span class="k">def</span> <span class="nf">get_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">get_schema</span><span class="p">()</span></div>
+<div class="viewcode-block" id="SampleDatabase.get_schema"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.get_schema">[docs]</a>    <span class="k">def</span> <span class="nf">get_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">get_schema</span><span class="p">()</span>
 
-<div class="viewcode-block" id="SampleDatabase.search"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">searcher</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<div class="viewcode-block" id="SampleDatabase.search"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">searcher</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-<div class="viewcode-block" id="SampleDatabase.publish"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.publish">[docs]</a>    <span class="k">def</span> <span class="nf">publish</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></div></div>
+<div class="viewcode-block" id="SampleDatabase.publish"><a class="viewcode-back" href="../../sampledb.html#sampledb.sampledatabase.SampleDatabase.publish">[docs]</a>    <span class="k">def</span> <span class="nf">publish</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span></div></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 </pre></div>
 
            </div>

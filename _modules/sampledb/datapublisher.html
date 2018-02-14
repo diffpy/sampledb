@@ -177,8 +177,8 @@
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">splt</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">None</span>
         <span class="k">if</span> <span class="n">splt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;sample.xlsx&#39;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="kc">None</span>
-        <span class="k">return</span> <span class="n">splt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+            <span class="k">return</span> <span class="kc">None</span></div>
+        <span class="k">return</span> <span class="n">splt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <div class="viewcode-block" id="DataPublisher.parse_sheet"><a class="viewcode-back" href="../../sampledb.html#sampledb.datapublisher.DataPublisher.parse_sheet">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">parse_sheet</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">sheet</span><span class="p">):</span>
@@ -202,8 +202,8 @@
             <span class="k">if</span> <span class="s1">&#39;date&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
                 <span class="n">d</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
             <span class="n">samples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-
-        <span class="k">return</span> <span class="n">samples</span></div>
+</div>
+        <span class="k">return</span> <span class="n">samples</span>
 
 <div class="viewcode-block" id="DataPublisher.parse_wb"><a class="viewcode-back" href="../../sampledb.html#sampledb.datapublisher.DataPublisher.parse_wb">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">parse_wb</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">wb</span><span class="p">):</span>
@@ -215,11 +215,11 @@
 
         <span class="k">for</span> <span class="n">sheet</span> <span class="ow">in</span> <span class="n">wb</span><span class="o">.</span><span class="n">sheet_names</span><span class="p">:</span>
             <span class="n">samples</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">parse_sheet</span><span class="p">(</span><span class="n">wb</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">sheet</span><span class="p">)))</span>
+</div>
+        <span class="k">return</span> <span class="n">samples</span>
 
-        <span class="k">return</span> <span class="n">samples</span></div>
-
-<div class="viewcode-block" id="DataPublisher.get_schema"><a class="viewcode-back" href="../../sampledb.html#sampledb.datapublisher.DataPublisher.get_schema">[docs]</a>    <span class="k">def</span> <span class="nf">get_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">schema</span></div>
+<div class="viewcode-block" id="DataPublisher.get_schema"><a class="viewcode-back" href="../../sampledb.html#sampledb.datapublisher.DataPublisher.get_schema">[docs]</a>    <span class="k">def</span> <span class="nf">get_schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">schema</span>
 
 <div class="viewcode-block" id="DataPublisher.publish"><a class="viewcode-back" href="../../sampledb.html#sampledb.datapublisher.DataPublisher.publish">[docs]</a>    <span class="k">def</span> <span class="nf">publish</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -234,8 +234,8 @@
                 <span class="n">validate</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">schema</span><span class="p">)</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
             <span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed validating uid=</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;uid&#39;</span><span class="p">)))</span>
-                <span class="k">raise</span> <span class="n">e</span></div></div>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed validating uid=</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;uid&#39;</span><span class="p">)))</span></div></div>
+                <span class="k">raise</span> <span class="n">e</span>
 </pre></div>
 
            </div>
