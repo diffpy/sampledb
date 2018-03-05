@@ -1,7 +1,6 @@
 ./_modules/index.html
 ./_modules/sampledb/databasesearcher.html
 ./_modules/sampledb/datapublisher.html
-./_modules/sampledb/sampledatabase.html
 ./_modules/sampledb/searchresult.html
 ./_sources/index.rst.txt
 ./_sources/sampledb.rst.txt

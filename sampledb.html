@@ -91,7 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-sampledb.databasesearcher">sampledb.databasesearcher module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-sampledb.datapublisher">sampledb.datapublisher module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-sampledb.sampledatabase">sampledb.sampledatabase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sampledb-sampledatabase-module">sampledb.sampledatabase module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-sampledb.searchresult">sampledb.searchresult module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-sampledb">Module contents</a></li>
 </ul>
@@ -232,34 +232,8 @@ Returns a list of the dictionaries.</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-sampledb.sampledatabase">
-<span id="sampledb-sampledatabase-module"></span><h2>sampledb.sampledatabase module<a class="headerlink" href="#module-sampledb.sampledatabase" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="sampledb.sampledatabase.SampleDatabase">
-<em class="property">class </em><code class="descclassname">sampledb.sampledatabase.</code><code class="descname">SampleDatabase</code><span class="sig-paren">(</span><em>hostname=None</em>, <em>db='sampleDB'</em>, <em>collection='samples'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="method">
-<dt id="sampledb.sampledatabase.SampleDatabase.get_schema">
-<code class="descname">get_schema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.get_schema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.get_schema" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="sampledb.sampledatabase.SampleDatabase.load_schema">
-<code class="descname">load_schema</code><span class="sig-paren">(</span><em>schema_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.load_schema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.load_schema" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="sampledb.sampledatabase.SampleDatabase.publish">
-<code class="descname">publish</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.publish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.publish" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="sampledb.sampledatabase.SampleDatabase.search">
-<code class="descname">search</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/sampledatabase.html#SampleDatabase.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.sampledatabase.SampleDatabase.search" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
+<div class="section" id="sampledb-sampledatabase-module">
+<h2>sampledb.sampledatabase module<a class="headerlink" href="#sampledb-sampledatabase-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-sampledb.searchresult">
 <span id="sampledb-searchresult-module"></span><h2>sampledb.searchresult module<a class="headerlink" href="#module-sampledb.searchresult" title="Permalink to this headline">¶</a></h2>
@@ -276,7 +250,7 @@ Returns a list of the dictionaries.</p>
 
 <dl class="method">
 <dt id="sampledb.searchresult.SearchResult.download">
-<code class="descname">download</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/searchresult.html#SearchResult.download"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.searchresult.SearchResult.download" title="Permalink to this definition">¶</a></dt>
+<code class="descname">download</code><span class="sig-paren">(</span><em>filename</em>, <em>schema={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sampledb/searchresult.html#SearchResult.download"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sampledb.searchresult.SearchResult.download" title="Permalink to this definition">¶</a></dt>
 <dd><p>Download the search results as a spreadsheet.</p>
 </dd></dl>
 
