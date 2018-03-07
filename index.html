@@ -153,6 +153,30 @@
             
   <div class="section" id="welcome-to-sampledb-s-documentation">
 <h1>Welcome to sampledb’s documentation!<a class="headerlink" href="#welcome-to-sampledb-s-documentation" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">sampledb</span> <span class="pre">-c</span> <span class="pre">conda-forge</span></code></p>
+</div>
+<div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<p>To start using sampledb with a remote server, create a configuration file
+in <code class="docutils literal notranslate"><span class="pre">~/.config/sampledb/config.yml</span></code>. The config.yml should have the following
+format:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">hostname</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;Remote server IP&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain">db</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">sampleDB</span>
+<span class="l l-Scalar l-Scalar-Plain">collection</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">samples</span>
+<span class="l l-Scalar l-Scalar-Plain">key</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;path/to/pem-key&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain">user</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;username on remote server&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain">port</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">8000</span>
+</pre></div>
+</div>
+<p>You can publish sample metadata to the database by typing
+<code class="docutils literal notranslate"><span class="pre">publish_samples</span> <span class="pre">--config</span></code>,
+and you can download sample metadata from the database to a spreadsheet by
+typing <code class="docutils literal notranslate"><span class="pre">download_samples</span> <span class="pre">&lt;spreadsheet_name.xlsx&gt;</span> <span class="pre">--config</span></code>.
+For more information on these commands, use <code class="docutils literal notranslate"><span class="pre">publish_samples</span> <span class="pre">-h</span></code> or
+<code class="docutils literal notranslate"><span class="pre">download_samples</span> <span class="pre">-h</span></code> to display the help information.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
